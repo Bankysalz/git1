@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body{
+    font-family: 'Raleway', Helvetica, sans-serif;
+    background: #a9d7d1;
+}
+
+#survey-form{
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+     font-family: 'Raleway', Helvetica, sans-serif; 
+    font-size: medium;
+    background:#ffffff;
+    display: block;   
+}
+
+.form-container{}
+
+#title{
+    text-align: center;
+    /* font-family: Arial, Helvetica, sans-serif */
+}
+#description{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center
+}
+
+#dropdown{
+    text-align: left;
+    font-style: normal;
+    font-family: Raleway', Helvetica, sans-serif; 
+
+}
+#roles{
+    text-align: left;
+}
+#submit{
+    background: blue;
+    padding:10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <div id="title">
+        <h1>Survey Form</h1>
+       
+    </div>
+    <form id="survey-form">
+     <p id="description">
+                    Let us know we can improve SB PAD DEPT
+    </p>
+    <div class="form-container">
+            <label for="name">*Name</label>
+    <input type="text" id="name-label" placeholder="Enter your name" required>
+        <br><br> 
+        <label for="email">*Email</label>
+         <input type="email" id="email-label" placeholder="Enter your name" required>
+        <br> <br>
+        <label for="age">*Age</label>
+        <input type="number" id="number-label" placeholder="Age" required max="125">
+        <br> <br>
+        <label for="" id="roles">Which option best describes <br>
+             your current role?
+            </label>
+            <select name="" id="dropdown">
+                <option value="" disabled>Select an option</option>
+                <option value="">Student</option>
+                <option value="">Full Time Job</option>
+                <option value="">Full Time Learner</option>
+                <option value="">Prefer not to say</option>
+                <option value="">Other</option>
+            </select>
+            <br> <br>
+       <label for="name">
+            * How likely is that you would recommend SB TEL to a friend?
+       </label> <br>
+        <input type="radio" name="option" value="Definitely">Definitely
+        <br>
+        <input type="radio" name="option" value="Maybe">Maybe
+        <br>
+        <input type="radio" name="option" value="Not sure">Not sure
+        <br> <br>
+        <label for="name">
+                What do you like most in SB TEL:  
+        </label>
+        <select name="" id="dropdown">
+            <option value=""disabled>Select an option</option>
+            <option value="">Challenges</option>
+            <option value="">Friday games</option>
+            <option value="">projects</option>
+            <option value="">community</option>
+            <option value="">Open source</option>
+        </select>
+        <br> <br>
+        <label for="likes">
+                Things that should be improved in the future
+                (Check all that apply):
+        </label>
+        <br> <br>
+        <input type="checkbox" value="Front-end Projects">Front-end Projects
+        <br> <br>
+        <input type="checkbox" value="Back-end projects ">Back-end projects 
+        <br> <br>
+        <input type="checkbox" value="Open Source Community">Open Source Community
+        <br> <br>
+        <input type="checkbox" value="UI UX Design">UI UX Design
+        <br><br>
+        <input type="checkbox" value="Village meetings">Village meetings
+        <br><br>
+        <input type="checkbox" value="City Meetups">City Meetups
+        <br><br>
+        <input type="checkbox" value="Additional Courses">Additional Courses
+        <br><br>
+        <label for="" style="margin-bottom: 10px;">Any Comments or Suggestions? </label>
+        <textarea name="" id="" cols="30" rows="4"
+         placeholder="Enter your Comment here..."></textarea>
+        <br><br>
+        <input type="button" id="submit" value="submit" onclick="register()">
+    </div>
+    </form>
+     
+    </div>
+</body>
+<script>
+function register() {
+    alert("moh")
+    window.location = "http://google.com"
+}
+</script>
+</html>
